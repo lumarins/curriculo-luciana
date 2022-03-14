@@ -1,0 +1,151 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css");
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	grid-gap: 1em 1em;
+}
+
+.item-2 {
+	grid-area: 1 / 1 / 3 / 2;
+    background-color: #f3f3f3;
+    text-align: center;
+    height: 100vh;
+}
+
+.item-3 {
+	grid-area: 1 / 2 / 3 / 4;
+    text-align: left;
+    padding: 2% 5% 0 2%;
+}
+
+img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 5%;
+}
+
+
+#topo {
+    padding: 5% 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#name {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.informacoes, .social {
+    list-style-type: none;
+    line-height: 2;
+}
+.item-info, .job-info:first-child, .facul  {
+    font-size: 19px;
+    font-weight: bold;
+}
+.dados{
+    font-size: 18px;
+}
+
+li{
+    text-align: left !important;
+}
+
+h1{
+    padding: 1% 0% 2% 0%;
+    font-size: 28px;
+    font-family: arial;
+}
+
+
+/* Social */
+
+.social > li {
+    text-align: center !important;
+}
+
+.fa{
+    font-size: 20px;
+    padding: 5%;
+    text-decoration: none;
+    width: 150px;
+    margin: 1%
+
+}
+
+.fa:hover {
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-github {
+  background: #222;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: #ab5b88;
+  color: white;
+}
+
+/* Barra Horizontal*/
+#topo, #pessoal {
+    border-bottom: 5px solid transparent;
+	border-image: linear-gradient(
+		to right,
+		#333,
+		#333 12.5%,
+		#a68558 12.5%,
+		#a68558 25%,
+		#ba5d5d 25%,
+		#ba5d5d 37.5%,
+		#bf9663 37.5%,
+		#bf9663 50%,
+		#d4ce7d 50%,
+		#d4ce7d 62.5%,
+		#78c28e 62.5%,
+		#78c28e 75%,
+		#7a90c4 75%,
+		#7a90c4 87.5%,
+		#c68fcf 87.5%,
+		#c68fcf 100%
+		);
+
+        -webkit-border-image: -webkit-linear-gradient(to right,
+		#333,
+		#333 12.5%,
+		#a68558 12.5%,
+		#a68558 25%,
+		#ba5d5d 25%,
+		#ba5d5d 37.5%,
+		#bf9663 37.5%,
+		#bf9663 50%,
+		#d4ce7d 50%,
+		#d4ce7d 62.5%,
+		#78c28e 62.5%,
+		#78c28e 75%,
+		#7a90c4 75%,
+		#7a90c4 87.5%,
+		#c68fcf 87.5%,
+		#c68fcf 100%
+		);
+
+	border-image-slice: 1;
+}
